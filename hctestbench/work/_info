@@ -1,0 +1,288 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ise/Desktop/unt/behavsim
+T_opt
+!s110 1652030590
+VQAn2MhO`[Nkm7K8mE6H;i1
+04 8 5 work hcdriver behav 1
+=4-0800270b0000-6277fc7e-2f8fc-1ba7
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.7f;67
+R0
+T_opt1
+!s110 1652032325
+VL6eMF]hPWZJHW5cjBU6[i1
+04 11 5 work hcdriver_tb behav 1
+=1-0800270b0000-62780345-1525e-29e4
+R1
+R2
+n@_opt1
+R3
+R0
+Eecho_counter
+Z4 w1650308326
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z6 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z7 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 d/home/ise/Desktop/hctestbench
+Z11 8/home/ise/Desktop/hctestbench/echo_counter.vhdl
+Z12 F/home/ise/Desktop/hctestbench/echo_counter.vhdl
+l0
+L10
+V_F5S6ae^>2LLlh?B=CJCF2
+!s100 =>Gln=X^P9bQ;kCiLXo`h2
+Z13 OL;C;10.7f;67
+32
+Z14 !s110 1652035211
+!i10b 1
+Z15 !s108 1652035211.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ise/Desktop/hctestbench/echo_counter.vhdl|
+Z17 !s107 /home/ise/Desktop/hctestbench/echo_counter.vhdl|
+!i113 0
+Z18 o-work work -2002 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Abehav
+R5
+R6
+R7
+R8
+R9
+Z20 DEx4 work 12 echo_counter 0 22 _F5S6ae^>2LLlh?B=CJCF2
+l31
+L23
+V9MNL1SnU[?S^PTM8gA;<32
+!s100 hSS>6eCT0E4Nkb5QBKg5Q3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Ehc_sr04
+Z21 w1650216746
+R7
+R6
+R5
+Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R8
+R9
+R10
+Z23 8/home/ise/Desktop/hctestbench/HC_SR04.vhdl
+Z24 F/home/ise/Desktop/hctestbench/HC_SR04.vhdl
+l0
+L14
+VF<8l9DiEVI:L0fb7X2jSb3
+!s100 k6W4S2VlRmag;?cD>MO^W3
+R13
+32
+R14
+!i10b 1
+R15
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ise/Desktop/hctestbench/HC_SR04.vhdl|
+Z26 !s107 /home/ise/Desktop/hctestbench/HC_SR04.vhdl|
+!i113 0
+R18
+R19
+Abehav
+R7
+R6
+R5
+R22
+R8
+R9
+Z27 DEx4 work 7 hc_sr04 0 22 F<8l9DiEVI:L0fb7X2jSb3
+l90
+L22
+VK>ok^aEVmocHUL9ozOO[42
+!s100 @kOSF7VcRc10VmaomW:m_2
+R13
+32
+R14
+!i10b 1
+R15
+R25
+R26
+!i113 0
+R18
+R19
+Ehcdriver
+Z28 w1652030582
+R7
+R6
+R5
+R22
+R8
+R9
+R10
+Z29 8/home/ise/Desktop/hctestbench/hcdriver-Man-Nar.vhdl
+Z30 F/home/ise/Desktop/hctestbench/hcdriver-Man-Nar.vhdl
+l0
+L16
+V@gaMJCj_14AmZhRNz^]ze2
+!s100 K9?Rnc<^e7JlE2gooAhR32
+R13
+32
+Z31 !s110 1652035212
+!i10b 1
+R15
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ise/Desktop/hctestbench/hcdriver-Man-Nar.vhdl|
+!s107 /home/ise/Desktop/hctestbench/hcdriver-Man-Nar.vhdl|
+!i113 0
+R18
+R19
+Abehav
+R20
+R27
+Z33 DEx4 work 8 trig_gen 0 22 WUk[dWoP2RfZej2LG4nKB2
+R7
+R6
+R5
+R22
+R8
+R9
+DEx4 work 8 hcdriver 0 22 @gaMJCj_14AmZhRNz^]ze2
+l47
+L37
+V64CeIP=lUFmWREOLPW??z1
+Z34 !s100 3gRMIodl@mTD_M`Wi1Hkd1
+R13
+32
+R31
+!i10b 1
+R15
+R32
+Z35 !s107 /home/ise/Desktop/hctestbench/hcdriver-Man-Nar.vhdl|
+!i113 0
+R18
+R19
+Ehcdriver_tb
+Z36 w1652032405
+R22
+R8
+R9
+R10
+Z37 8/home/ise/Desktop/hctestbench/hcdriver-Man-Nar-tb.vhdl
+Z38 F/home/ise/Desktop/hctestbench/hcdriver-Man-Nar-tb.vhdl
+l0
+L5
+V4kXfKOE<?<4V7_Chg3g`R1
+!s100 HIJW7YZ3>liboM7z^fUgB2
+R13
+32
+R14
+!i10b 1
+R15
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ise/Desktop/hctestbench/hcdriver-Man-Nar-tb.vhdl|
+Z40 !s107 /home/ise/Desktop/hctestbench/hcdriver-Man-Nar-tb.vhdl|
+!i113 0
+R18
+R19
+Abehav
+R27
+R7
+R6
+R5
+Z41 DEx4 work 8 hcdriver 0 22 7BE@[QWEP>7H?UciGA37C3
+R22
+R8
+R9
+DEx4 work 11 hcdriver_tb 0 22 4kXfKOE<?<4V7_Chg3g`R1
+l15
+L8
+Vhaih[l>R>e@MHUbjQ5h<k2
+!s100 C32]Zf`L;MXW^aM1k[bO70
+R13
+32
+R14
+!i10b 1
+R15
+R39
+R40
+!i113 0
+R18
+R19
+Etopsim
+w1651588156
+R7
+R6
+R5
+R22
+R8
+R9
+R10
+8/home/ise/FPGA/lab/hcprojekt/top.vhdl
+F/home/ise/FPGA/lab/hcprojekt/top.vhdl
+l0
+L18
+VQSAMWzAVCeFg9EUc:N9Mz1
+!s100 Fa4nfOl4GL_H]z?VNVScC3
+R13
+32
+!s110 1652028122
+!i10b 1
+!s108 1652028122.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ise/FPGA/lab/hcprojekt/top.vhdl|
+!s107 /home/ise/FPGA/lab/hcprojekt/top.vhdl|
+!i113 0
+R18
+R19
+Etrig_gen
+Z42 w1650982876
+R5
+R6
+R7
+R8
+R9
+R10
+Z43 8/home/ise/Desktop/hctestbench/trig_gen.vhdl
+Z44 F/home/ise/Desktop/hctestbench/trig_gen.vhdl
+l0
+L9
+VWUk[dWoP2RfZej2LG4nKB2
+!s100 iLlk`JDiIW<aUBdL4fDe50
+R13
+32
+R14
+!i10b 1
+R15
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/ise/Desktop/hctestbench/trig_gen.vhdl|
+Z46 !s107 /home/ise/Desktop/hctestbench/trig_gen.vhdl|
+!i113 0
+R18
+R19
+Abehav
+R5
+R6
+R7
+R8
+R9
+R33
+l30
+L22
+VHHgA4cY7ZY:5`V^MHNzKa1
+!s100 ?L98B294<S[LI6FVoXP[K3
+R13
+32
+R14
+!i10b 1
+R15
+R45
+R46
+!i113 0
+R18
+R19
