@@ -1,0 +1,564 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+WARNING:Xst:1583 - You are using an internal switch '-use_new_parser'.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+Reading design: topsim.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topsim.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topsim"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Use New Parser                     : yes
+Top Module Name                    : topsim
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ise/FPGA/hc driver/hcprojekt/trig_gen.vhdl" into library work
+Parsing entity <trig_gen>.
+Parsing architecture <behav> of entity <trig_gen>.
+Parsing VHDL file "/home/ise/FPGA/hc driver/hcprojekt/led8_drv.vhd" into library work
+Parsing entity <led8_drv>.
+Parsing architecture <Behavioral> of entity <led8_drv>.
+Parsing VHDL file "/home/ise/FPGA/hc driver/hcprojekt/echo_counter.vhdl" into library work
+Parsing entity <echo_counter>.
+Parsing architecture <behav> of entity <echo_counter>.
+Parsing VHDL file "/home/ise/FPGA/hc driver/hcprojekt/top.vhdl" into library work
+Parsing entity <topsim>.
+Parsing architecture <behav> of entity <topsim>.
+WARNING:HDLCompiler:946 - "/home/ise/FPGA/hc driver/hcprojekt/top.vhdl" Line 101: Actual for formal port d is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <topsim> (architecture <behav>) with generics from library <work>.
+
+Elaborating entity <trig_gen> (architecture <behav>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "/home/ise/FPGA/hc driver/hcprojekt/trig_gen.vhdl" Line 25: Using initial value 100 for trig_end_val since it is never assigned
+WARNING:HDLCompiler:871 - "/home/ise/FPGA/hc driver/hcprojekt/trig_gen.vhdl" Line 26: Using initial value 400000 for ctr_rst_val since it is never assigned
+WARNING:HDLCompiler:92 - "/home/ise/FPGA/hc driver/hcprojekt/trig_gen.vhdl" Line 60: trig_end_val should be on the sensitivity list of the process
+
+Elaborating entity <echo_counter> (architecture <behav>) with generics from library <work>.
+
+Elaborating entity <led8_drv> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <topsim>.
+    Related source file is "/home/ise/FPGA/hc driver/hcprojekt/top.vhdl".
+        F_CLK = 10.0
+        N = 13
+    Summary:
+	no macro.
+Unit <topsim> synthesized.
+
+Synthesizing Unit <trig_gen>.
+    Related source file is "/home/ise/FPGA/hc driver/hcprojekt/trig_gen.vhdl".
+        FREQ_G = 10.0
+    Found 1-bit register for signal <s_do_trig>.
+    Found 20-bit register for signal <s_q>.
+    Found 20-bit adder for signal <s_q[19]_GND_8_o_add_3_OUT> created at line 52.
+    Found 20-bit comparator greater for signal <n0000> created at line 41
+    Found 20-bit comparator greater for signal <s_q[19]_GND_8_o_LessThan_7_o> created at line 60
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <trig_gen> synthesized.
+
+Synthesizing Unit <echo_counter>.
+    Related source file is "/home/ise/FPGA/hc driver/hcprojekt/echo_counter.vhdl".
+        FREQ_G = 10.0
+    Found 13-bit register for signal <s_dist>.
+    Found 13-bit register for signal <dist>.
+    Found 20-bit register for signal <s_q>.
+    Found 20-bit adder for signal <s_q[19]_GND_9_o_add_0_OUT> created at line 43.
+    Found 13-bit adder for signal <s_dist[12]_GND_9_o_add_3_OUT> created at line 50.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+Unit <echo_counter> synthesized.
+
+Synthesizing Unit <led8_drv>.
+    Related source file is "/home/ise/FPGA/hc driver/hcprojekt/led8_drv.vhd".
+        MAIN_CLK = 100000000
+        CLKDIV_INTERNAL = true
+    Found 17-bit register for signal <clkdiv_counter>.
+    Found 1-bit register for signal <slow_clk>.
+    Found 8-bit register for signal <one_hot>.
+    Found 17-bit adder for signal <clkdiv_counter[16]_GND_10_o_add_16_OUT> created at line 89.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+Unit <led8_drv> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 13-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 20-bit adder                                          : 2
+# Registers                                            : 8
+ 1-bit register                                        : 2
+ 13-bit register                                       : 2
+ 17-bit register                                       : 1
+ 20-bit register                                       : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 20-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <echo_counter>.
+The following registers are absorbed into counter <s_dist>: 1 register on signal <s_dist>.
+The following registers are absorbed into counter <s_q>: 1 register on signal <s_q>.
+Unit <echo_counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <led8_drv>.
+The following registers are absorbed into counter <clkdiv_counter>: 1 register on signal <clkdiv_counter>.
+Unit <led8_drv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <trig_gen>.
+The following registers are absorbed into counter <s_q>: 1 register on signal <s_q>.
+Unit <trig_gen> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 13-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 20-bit up counter                                     : 2
+# Registers                                            : 23
+ Flip-Flops                                            : 23
+# Comparators                                          : 2
+ 20-bit comparator greater                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <topsim> ...
+
+Optimizing unit <trig_gen> ...
+
+Optimizing unit <echo_counter> ...
+
+Optimizing unit <led8_drv> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topsim, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topsim.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 302
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 72
+#      LUT2                        : 8
+#      LUT3                        : 6
+#      LUT4                        : 32
+#      MUXCY                       : 98
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 70
+# FlipFlops/Latches                : 93
+#      FD                          : 21
+#      FDE                         : 1
+#      FDR                         : 17
+#      FDRE                        : 53
+#      FDRSE                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 4
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       71  out of   4656     1%  
+ Number of Slice Flip Flops:             93  out of   9312     0%  
+ Number of 4 input LUTs:                131  out of   9312     1%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    232     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+CLK_sys                            | BUFGP                    | 85    |
+ledDriver/slow_clk                 | NONE(ledDriver/one_hot_7)| 8     |
+-----------------------------------+--------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.217ns (Maximum Frequency: 160.849MHz)
+   Minimum input arrival time before clock: 7.325ns
+   Maximum output required time after clock: 10.119ns
+   Maximum combinational path delay: 7.563ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_sys'
+  Clock period: 6.217ns (frequency: 160.849MHz)
+  Total number of paths / destination ports: 2683 / 190
+-------------------------------------------------------------------------
+Delay:               6.217ns (Levels of Logic = 8)
+  Source:            echoent/s_q_15 (FF)
+  Destination:       echoent/s_q_19 (FF)
+  Source Clock:      CLK_sys rising
+  Destination Clock: CLK_sys rising
+
+  Data Path: echoent/s_q_15 to echoent/s_q_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.591   0.622  echoent/s_q_15 (echoent/s_q_15)
+     LUT4:I0->O            1   0.704   0.000  echoent/Mcount_s_q_val1_wg_lut<0> (echoent/Mcount_s_q_val1_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  echoent/Mcount_s_q_val1_wg_cy<0> (echoent/Mcount_s_q_val1_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  echoent/Mcount_s_q_val1_wg_cy<1> (echoent/Mcount_s_q_val1_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  echoent/Mcount_s_q_val1_wg_cy<2> (echoent/Mcount_s_q_val1_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  echoent/Mcount_s_q_val1_wg_cy<3> (echoent/Mcount_s_q_val1_wg_cy<3>)
+     MUXCY:CI->O           2   0.059   0.000  echoent/Mcount_s_q_val1_wg_cy<4> (echoent/Mcount_s_q_val1)
+     MUXCY:CI->O           1   0.459   0.424  gen/trig1_SW0_cy (N8)
+     LUT4:I3->O           20   0.704   1.102  echoent/Mcount_s_q_val2 (echoent/Mcount_s_q_val)
+     FDRE:R                    0.911          echoent/s_q_0
+    ----------------------------------------
+    Total                      6.217ns (4.069ns logic, 2.148ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ledDriver/slow_clk'
+  Clock period: 1.656ns (frequency: 603.865MHz)
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               1.656ns (Levels of Logic = 0)
+  Source:            ledDriver/one_hot_2 (FF)
+  Destination:       ledDriver/one_hot_3 (FF)
+  Source Clock:      ledDriver/slow_clk rising
+  Destination Clock: ledDriver/slow_clk rising
+
+  Data Path: ledDriver/one_hot_2 to ledDriver/one_hot_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.591   0.757  ledDriver/one_hot_2 (ledDriver/one_hot_2)
+     FD:D                      0.308          ledDriver/one_hot_3
+    ----------------------------------------
+    Total                      1.656ns (0.899ns logic, 0.757ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_sys'
+  Total number of paths / destination ports: 109 / 88
+-------------------------------------------------------------------------
+Offset:              7.325ns (Levels of Logic = 5)
+  Source:            JD0 (PAD)
+  Destination:       echoent/s_q_19 (FF)
+  Destination Clock: CLK_sys rising
+
+  Data Path: JD0 to echoent/s_q_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.218   1.339  JD0_IBUF (JD0_IBUF)
+     LUT4:I0->O            1   0.704   0.000  echoent/Mcount_s_q_val1_wg_lut<4> (echoent/Mcount_s_q_val1_wg_lut<4>)
+     MUXCY:S->O            2   0.464   0.000  echoent/Mcount_s_q_val1_wg_cy<4> (echoent/Mcount_s_q_val1)
+     MUXCY:CI->O           1   0.459   0.424  gen/trig1_SW0_cy (N8)
+     LUT4:I3->O           20   0.704   1.102  echoent/Mcount_s_q_val2 (echoent/Mcount_s_q_val)
+     FDRE:R                    0.911          echoent/s_q_0
+    ----------------------------------------
+    Total                      7.325ns (4.460ns logic, 2.865ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ledDriver/slow_clk'
+  Total number of paths / destination ports: 403 / 11
+-------------------------------------------------------------------------
+Offset:              10.119ns (Levels of Logic = 5)
+  Source:            ledDriver/one_hot_1 (FF)
+  Destination:       seg1 (PAD)
+  Source Clock:      ledDriver/slow_clk rising
+
+  Data Path: ledDriver/one_hot_1 to seg1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.591   0.932  ledDriver/one_hot_1 (ledDriver/one_hot_1)
+     LUT3:I0->O            3   0.704   0.706  ledDriver/digit<0>121 (ledDriver/digit<0>12)
+     LUT4:I0->O            1   0.704   0.499  ledDriver/digit<3>_SW0 (N2)
+     LUT4:I1->O            7   0.704   0.883  ledDriver/digit<3> (ledDriver/digit<3>)
+     LUT4:I0->O            1   0.704   0.420  ledDriver/sseg<5>1 (seg5_OBUF)
+     OBUF:I->O                 3.272          seg5_OBUF (seg5)
+    ----------------------------------------
+    Total                     10.119ns (6.679ns logic, 3.440ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_sys'
+  Total number of paths / destination ports: 133 / 9
+-------------------------------------------------------------------------
+Offset:              9.435ns (Levels of Logic = 5)
+  Source:            echoent/dist_4 (FF)
+  Destination:       seg0 (PAD)
+  Source Clock:      CLK_sys rising
+
+  Data Path: echoent/dist_4 to seg0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.455  echoent/dist_4 (echoent/dist_4)
+     LUT4:I2->O            1   0.704   0.499  ledDriver/digit<0>24 (ledDriver/digit<0>24)
+     LUT4:I1->O            1   0.704   0.499  ledDriver/digit<0>40 (ledDriver/digit<0>40)
+     LUT3:I1->O            7   0.704   0.883  ledDriver/digit<0>75 (ledDriver/digit<0>)
+     LUT4:I0->O            1   0.704   0.420  ledDriver/sseg<0>1 (seg0_OBUF)
+     OBUF:I->O                 3.272          seg0_OBUF (seg0)
+    ----------------------------------------
+    Total                      9.435ns (6.679ns logic, 2.756ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 3
+-------------------------------------------------------------------------
+Delay:               7.563ns (Levels of Logic = 4)
+  Source:            btn0 (PAD)
+  Destination:       Led1 (PAD)
+
+  Data Path: btn0 to Led1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.218   0.633  btn0_IBUF (btn0_IBUF)
+     INV:I->O              1   0.704   0.000  s_echo_counter_rst1_lut_INV_0 (s_echo_counter_rst1_lut)
+     MUXCY:S->O           14   0.736   1.000  s_echo_counter_rst1_cy1 (Led1_OBUF)
+     OBUF:I->O                 3.272          Led1_OBUF (Led1)
+    ----------------------------------------
+    Total                      7.563ns (5.930ns logic, 1.633ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK_sys
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_sys        |    6.217|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ledDriver/slow_clk
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+ledDriver/slow_clk|    1.656|         |         |         |
+------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.67 secs
+ 
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+   for the specified device family. You are free to use it in order to take
+   advantage of its enhanced HDL parsing/elaboration capabilities. However,
+   please be aware that you may be impacted by  language support differences.
+   This version may also result in circuit performance and device utilization
+   differences for your particular design. You can always revert back to the
+   default XST solution by setting the "use_new_parser" option to value "no" 
+   on the XST command line or in the XST process properties panel.
+--> 
+
+
+Total memory usage is 463496 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

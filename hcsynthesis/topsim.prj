@@ -1,0 +1,4 @@
+vhdl work "../hcprojekt/trig_gen.vhdl"
+vhdl work "../hcprojekt/led8_drv.vhd"
+vhdl work "../hcprojekt/echo_counter.vhdl"
+vhdl work "../hcprojekt/top.vhdl"
